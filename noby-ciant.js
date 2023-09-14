@@ -6,6 +6,7 @@ class NobyAPI {
 
   buildQuery(params) {
     return Object.keys(params)
+      .filter((key) => params[key] !== null) // nullの値を持つキーをフィルタリング
       .map(
         (key) => `${encodeURIComponent(key)}=${encodeURIComponent(params[key])}`
       )

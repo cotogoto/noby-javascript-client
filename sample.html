@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noby API Test</title>
+</head>
+
+<body>
+
+    <h1>Noby API Test</h1>
+
+    <label for="message">Message:</label>
+    <input type="text" id="message" placeholder="Type your message here...">
+    <button onclick="sendMessage()">Send</button>
+
+    <h2>Response:</h2>
+    <pre id="response"></pre>
+
+    <script>
+        class NobyAPI {
+            // ... [NobyAPIクラスのコード]
+
+            // こちらにNobyAPIクラスのコードをコピーしてください
+        }
+
+        const appKey = "YOUR_APP_KEY"; // こちらに実際のappKeyを入力してください
+        const api = new NobyAPI(appKey);
+
+        async function sendMessage() {
+            const messageInput = document.getElementById('message');
+            const responseElement = document.getElementById('response');
+
+            try {
+                const response = await api.talk(messageInput.value);
+                responseElement.textContent = JSON.stringify(response, null, 2);
+            } catch (error) {
+                responseElement.textContent = "Error: " + error.message;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

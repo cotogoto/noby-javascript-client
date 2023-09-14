@@ -1,28 +1,42 @@
-# Noby JavaScript client
+# Noby JavaScript clientとは何ですか？ (What is Noby JavaScript client?)
 
-このリポジトリは、Noby APIとの会話を行うためのサンプルHTMLとJavaScriptのコードを提供します。
+Noby JavaScript clientは、NOBY APIへのアクセスを簡単にするためのJavaScriptライブラリです。(The Noby JavaScript client is a JavaScript library that provides easy access to the NOBY API.)
 
-## 前提条件
+<img src="https://raw.githubusercontent.com/cotogoto/noby-java-client/master/noby_image/noby_neutral_a.jpg" width='200'>
 
-- Noby APIのApp Keyが必要です。[こちら](https://webapi.cotogoto.ai/manual)から取得してください。
+* CotoGoto
+    * https://www.cotogoto.ai/
 
-## セットアップ
+* Noby API
+    * https://webapi.cotogoto.ai/
 
-1. このリポジトリをクローンまたはダウンロードします。
-    ```
-    git clone [リポジトリのURL]
-    ```
+## 更新日 (Updates)
 
-2. `index.html`をエディタで開き、`YOUR_APP_KEY`の部分を実際のApp Keyに置き換えてください。
+* 2021/06/18 0.5.0 released
+    
+## インストール方法 (Installation)
 
-3. ブラウザで`index.html`を開きます。
 
-4. テキストボックスにテキストを入力し、「会話する」ボタンをクリックすると、Noby APIにリクエストが送信され、返答が表示されます。
 
-## ライセンス
 
-このサンプルコードはMITライセンスのもとで公開されています。
+## 使い方 (Usage)
 
----
+基本的な使い方は以下の3ステップです：
 
-この`README.md`をGitHubリポジトリのルートディレクトリに配置してください。必要に応じて内容をカスタマイズして使用してください。
+1. Noby APIに従ったパラメータを設定します。(Set parameters according to the Noby API.)
+2. NobyClientオブジェクトを生成します。(Generate a NobyClient object.)
+3. 会話を設定して実行します。(Set up the conversation and execute it.)
+
+以下にサンプルコードを示します：
+
+```JavaScript
+
+```
+
+# ライセンス (License)
+
+ソースコードはMITライセンスの下でライセンスされており、ウェブサイトのコンテンツはCC BY 4.0でライセンスされています。(The source code is licensed under the MIT license, and the website content is licensed under CC BY 4.0.)
+
+
+
+
